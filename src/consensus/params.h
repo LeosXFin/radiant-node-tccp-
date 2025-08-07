@@ -46,6 +46,14 @@ struct Params {
      */
     uint64_t nDefaultGeneratedBlockSize;
 
+    uint64_t nMaxTxSize;
+
+    /**
+     * The target size in bytes for the TCCP virtual challenge block.
+     * This should correspond to the network's maximum block size.
+     */
+    size_t nTCCPChallengeSize;
+
     /** Proof of work parameters */
     uint256 powLimit;
     bool fPowAllowMinDifficultyBlocks;
