@@ -7,7 +7,11 @@
 #pragma once
 
 #include <cstdint>
+#include <vector>
 
+/** A 4-byte identifier for TCCP commitments in OP_RETURN outputs ('TCCP'). */
+static const std::vector<unsigned char> TCCP_MAGIC_BYTES = {0x54, 0x43, 0x43, 0x50};
+/** Parameters for a BIP9/8 soft-fork deployment. */
 /** 1MB */
 inline constexpr uint64_t ONE_MEGABYTE = 1000000;
 /** The maximum allowed size for a transaction, in bytes since the Energy (1.3.0) Release */
